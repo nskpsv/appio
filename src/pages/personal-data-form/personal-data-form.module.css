@@ -1,0 +1,26 @@
+.pageWrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: center / cover no-repeat url('./assets/background.png');
+}
+
+.formHeader {
+    margin: 25px 0;
+    font-size: 24px;
+    color:  #076ea1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

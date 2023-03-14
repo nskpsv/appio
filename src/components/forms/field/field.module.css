@@ -1,0 +1,18 @@
+.field {    
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-left: 10px;
+    color: #207198;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.error {
+    color: #982020;
+    font-size: 12px;
+    margin-left: 10px;
+    height: 14px;
+}

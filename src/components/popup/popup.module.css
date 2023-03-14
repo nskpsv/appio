@@ -1,0 +1,32 @@
+.background {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vW;
+    height: 100vh;
+    background-color: #ffffff7d;
+}
+
+.visible {
+    display: flex;
+}
+
+.popup {
+    max-width: 40vw;
+    min-height: 15vh;
+    background-color: #E3F1FE;
+    border: 1px solid #207198;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
+}
+
+.message {
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: default;
+}

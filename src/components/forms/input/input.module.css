@@ -1,0 +1,46 @@
+.input {
+    height: 35px;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0 13px;
+    border: 1px solid #207198;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    color: #37677E;
+    box-shadow: 0 0 2px black;
+}
+
+.input::placeholder {
+    color: #83b1ca;
+}
+
+.input[type="date"] {
+    cursor: text;
+}
+
+.input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    
+    background-image: url(./assets/calendar.svg);
+  }
+
+.inputError {
+    border: 1px solid #982020;
+    background-color: #fdeaea;
+    animation-duration: .2s;
+    animation-name: errorAnimation;
+}
+
+@keyframes errorAnimation {
+    33% {
+        transform: translateX(5px);
+    }
+    66% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}

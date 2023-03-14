@@ -1,0 +1,44 @@
+.button {
+    height: 40px;
+    min-width: 100px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    padding: 0 13px;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.425);
+    transition: all .2s ease-out;
+    margin: 11px 5px;
+}
+
+.button:disabled {
+    border: 1px solid #cecfcf;
+    background-color: #e3e4e3;
+}
+
+.button:disabled:hover {
+    border: 1px solid #cecfcf;
+    background-color: #e3e4e3;
+}
+
+.submitButton {
+    border: 1px solid #2eb64c;
+    background-color: #e3fee5;
+}
+
+.submitButton:hover {
+    background-color: #b8fabc;
+    box-shadow: 0 0 15px #01810a;
+}
+
+.cancelButton {
+    border: 1px solid #ffd900;
+    background-color: #fcfee3;
+}
+
+.cancelButton:hover {
+    background-color: #f8f1a0;
+    box-shadow: 0 0 15px #8f8300;
+}

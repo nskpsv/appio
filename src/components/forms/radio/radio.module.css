@@ -1,0 +1,42 @@
+.radio {
+  height: 35px;
+  width: 300px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 0 13px;
+  border: 1px solid #207198;
+  background-color: white;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  color: #37677e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 2px black;
+}
+
+.radioError {
+  border: 1px solid #982020;
+  background-color: #fdeaea;
+  animation-duration: 0.2s;
+  animation-name: errorAnimation;
+}
+
+.button,
+.button label,
+.button input {
+  cursor: pointer;
+}
+
+@keyframes errorAnimation {
+  33% {
+    transform: translateX(5px);
+  }
+  66% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}

@@ -1,0 +1,1 @@
+export const phone = (value: string) => value.length === 18 ? '' : 'Введите полный номер телефона.'

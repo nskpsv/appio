@@ -1,0 +1,1 @@
+export type Agree = "yes" | 'no';
