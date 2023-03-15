@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/appio/static/css/main.bbd05881.css",
-    "main.js": "/appio/static/js/main.60044354.js",
+    "main.js": "/appio/static/js/main.2dbefa6e.js",
     "static/media/background.png": "/appio/static/media/background.de49fdd954c02d7f8a92.png",
     "static/media/calendar.svg": "/appio/static/media/calendar.649eb196f0c85da026ce.svg",
     "index.html": "/appio/index.html",
     "main.bbd05881.css.map": "/appio/static/css/main.bbd05881.css.map",
-    "main.60044354.js.map": "/appio/static/js/main.60044354.js.map"
+    "main.2dbefa6e.js.map": "/appio/static/js/main.2dbefa6e.js.map"
   },
   "entrypoints": [
     "static/css/main.bbd05881.css",
-    "static/js/main.60044354.js"
+    "static/js/main.2dbefa6e.js"
   ]
 }
