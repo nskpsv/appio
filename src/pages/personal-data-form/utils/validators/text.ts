@@ -1,0 +1,1 @@
+export const text = (value: string) => /^[а-яё]+$/gi.test(value) ? '' : 'Допускаются только буквы русского алфавита.'

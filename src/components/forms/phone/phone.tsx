@@ -87,7 +87,7 @@ export const Phone: React.FC<PhoneProps> = ({
   }; 
  
   const handleKeyDown = (e: KeyboardEvent<HTMLInputElement>) => { 
-    const input = e.currentTarget as HTMLInputElement; 
+    const input = e.currentTarget; 
     const defaultPostion = defaultValue.length; 
  
     if ( 

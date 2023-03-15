@@ -3,6 +3,7 @@ import { required } from './validators/require';
 import { birthDate } from './validators/birth-date';
 import { email } from './validators/email';
 import { phone } from './validators/phone';
+import { text } from './validators/text';
 
 export type ValidatorResult = [result: boolean, state: SubmitFormState];
 
@@ -13,12 +14,15 @@ export const formValidator = (state: SubmitFormState): ValidatorResult => {
   for (let key in resultState) {
     switch (key as keyof SubmitFormState) {
       case 'name': {
-        resultState.name.error = required(resultState.name.value);
+        resultState.name.error =
+          required(resultState.name.value) || text(resultState.name.value);
         break;
       }
 
       case 'surname': {
-        resultState.surname.error = required(resultState.surname.value);
+        resultState.surname.error =
+          required(resultState.surname.value) ||
+          text(resultState.surname.value);
         break;
       }
 
@@ -26,7 +30,7 @@ export const formValidator = (state: SubmitFormState): ValidatorResult => {
         resultState.birthDate.error =
           required(resultState.birthDate.value) ||
           birthDate(resultState.birthDate.value);
-          
+
         break;
       }
 
@@ -43,7 +47,7 @@ export const formValidator = (state: SubmitFormState): ValidatorResult => {
 
       case 'email': {
         if (resultState.email.value) {
-        resultState.email.error = email(resultState.email.value);
+          resultState.email.error = email(resultState.email.value);
         }
         break;
       }
